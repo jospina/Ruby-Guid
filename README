@@ -37,20 +37,17 @@ DESCRIPTION
 
   This library can produce GUID/UUID on Windows (except first release of
   Win95 and older version) and on Unix using random number. I have only
-  tested this library under Win2k and Redhat 7.3; please report if you fail
+  tested this library under Win2k and Redhat 7.3; [jospina] I have tested it on Win7 and Widows server 2008[/jospina]please report if you fail
   to use it on other platforms. On Windows, it uses CryptGenRandom(). On
   Unix, it uses /dev/urandom (and if fail, try to use /dev/random). No other
   external program or library is needed.
 
-  The latest version of this library can be obtained from:
-
-    http://rubyforge.org/projects/uuid/
-
   To install:
 
-    % ruby install.rb config
-    % ruby install.rb setup
-    # ruby install.rb install
+    > git clone "git://github.com/jospina/Ruby-Guid.git" 
+    > ruby install.rb config
+    > ruby install.rb setup
+    > ruby install.rb install
 
 
 SEE ALSO
